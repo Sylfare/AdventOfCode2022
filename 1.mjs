@@ -1,6 +1,6 @@
 import { openFile, Performance } from "./lib.mjs";
 
-const perf  = new Performance();
+const perf = new Performance();
 openFile("./input1.txt","\n\n")
 .then( lines => 
     lines.map(lines => lines.split('\n').reduce((total, cur) => total + parseInt(cur.trim(), 10), 0))
